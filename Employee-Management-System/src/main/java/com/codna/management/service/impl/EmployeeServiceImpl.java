@@ -11,6 +11,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Service class for business logic
+ */
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
@@ -58,6 +61,12 @@ public class EmployeeServiceImpl implements EmployeeService {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Method to update the employee data using employee Id
+     * @param employeeId
+     * @param updateEmployee
+     * @return
+     */
     @Override
     public EmployeeDto updateEmployee(Long employeeId, EmployeeDto updateEmployee) {
         Employee employee = employeeRepository.findById(employeeId)

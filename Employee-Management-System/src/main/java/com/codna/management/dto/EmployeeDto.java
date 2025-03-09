@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * Created DTO class to get as Response
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

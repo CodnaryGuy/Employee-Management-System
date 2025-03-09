@@ -5,6 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * created employee class to map the tables with database
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
